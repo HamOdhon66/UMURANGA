@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UMURANGA | Dashboard</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #4a8a8a, #47798d);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    header {
+      background: rgba(30, 70, 85, 0.85);
+      backdrop-filter: blur(6px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 28px;
+      height: 54px;
+      flex-shrink: 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .logo { display: flex; align-items: center; gap: 10px; }
+    .logo img { height: 34px; width: auto; }
+    .logo span {
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+    }
+
+    .nav-right { display: flex; align-items: center; gap: 24px; }
+    .nav-right a {
+      color: rgba(255,255,255,0.75);
+      text-decoration: none;
+      font-size: 0.85rem;
+      letter-spacing: 0.5px;
+      transition: color 0.2s;
+    }
+    .nav-right a:hover { color: #fff; }
+
+    .user-badge {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 20px;
+      padding: 5px 16px;
+      color: #fff;
+      font-size: 0.82rem;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+    }
+
+    .shell {
+      display: flex;
+      flex: 1;
+      overflow: hidden;
+    }
+
+    .sidebar-frame {
+      width: 210px;
+      flex-shrink: 0;
+      border: none;
+      border-right: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .content-frame {
+      flex: 1;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="umuranga.png" alt="UMURANGA">
+    </div>
+    <div class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="#">Notifications</a>
+      <div class="user-badge">My Account</div>
+    </div>
+  </header>
+
+  <div class="shell">
+    <iframe class="sidebar-frame" src="sidebar.html" name="sidebar" title="Navigation"></iframe>
+    <iframe class="content-frame" src="dash_home.html" name="main" title="Main content"></iframe>
+  </div>
+</body>
+</html>
