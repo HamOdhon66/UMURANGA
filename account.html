@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UMURANGA | My Account</title>
+  <link rel="stylesheet" href="account.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <img src="assets/umuranga.png" alt="UMURANGA Logo">
+      </div>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard/dashboard.html">Dashboard</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <h2>My Account</h2>
+  <p class="subtitle">Manage your profile and settings</p>
+
+  <div class="account-box">
+    <div class="profile-photo">
+      <img src="assets/umuranga.png" alt="Profile Photo">
+    </div>
+    <div class="account-info">
+      <p><strong>Name:</strong> Ham Odhon Iryamukuru</p>
+      <p><strong>Email:</strong> ham@example.com</p>
+      <p><strong>Location:</strong> Kigali City</p>
+    </div>
+    <div class="account-actions">
+      <button id="editBtn">Edit Profile</button>
+      <button id="logoutBtn">Sign Out</button>
+    </div>
+  </div>
+  <div class="settings-box">
+    <h3>Preferences</h3>
+    <label><input type="checkbox" id="darkModeToggle"> Enable Dark Mode</label>
+  </div>
+
+  <div class="settings-box">
+    <h3>Privacy Settings</h3>
+    <label><input type="checkbox"> Show my profile publicly</label>
+    <label><input type="checkbox"> Allow workers to message me</label>
+    <label><input type="checkbox"> Share my location with jobs</label>
+  </div>
+
+  <div class="settings-box">
+    <h3>Notifications</h3>
+    <label><input type="checkbox" checked> Email notifications</label>
+    <label><input type="checkbox"> SMS alerts</label>
+    <label><input type="checkbox"> Push notifications</label>
+  </div>
+
+  <div class="settings-box">
+    <h3>Accessibility</h3>
+    <label><input type="checkbox"> High contrast mode</label>
+    <label><input type="checkbox"> Larger text size</label>
+    <label><input type="checkbox"> Screen reader support</label>
+  </div>
+</body>
+</html>

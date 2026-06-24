@@ -127,11 +127,11 @@ body {
 .image:hover {
   transform: scale(1.05);        
 }
-#plumber { background-image: url('plumber.jpg'); }
-#mechanic { background-image: url('mechanic.jfif'); }
-#electrician { background-image: url('electrician.jfif'); }
-#cleaner { background-image: url('cleaner.jfif'); }
-#constructor { background-image: url('constructor.jfif'); }
+#plumber { background-image: url('assets/plumber.jpg'); }
+#mechanic { background-image: url('assets/mechanic.jfif'); }
+#electrician { background-image: url('assets/electrician.jfif'); }
+#cleaner { background-image: url('assets/cleaner.jfif'); }
+#constructor { background-image: url('assets/constructor.jfif'); }
 
 .testimonials {
   margin: 40px auto;
